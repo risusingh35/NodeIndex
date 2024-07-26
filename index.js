@@ -1,0 +1,7 @@
+// require('./src/ES5/StrictMode')
+// require('./src/ES5/JSONSupport')
+// require('./src/ES5/ArrayMethods')
+// require('./src/ES5/GettersAndSetters')
+// require('./src/ES5/ObjectCreate')
+// require('./src/ES6/BlockScopedVariables_let_const_var')
+require('./src/ES6/ArrowFunctions')
