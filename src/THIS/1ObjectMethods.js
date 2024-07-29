@@ -19,13 +19,21 @@ const UserObject = {
 // this in arrow function
 // // undefined, because `this` is inherited from the global context
 
-const name=()=>'Singh Ji'
-employeeObject={
-    name:'Risu Singh',
-    post:"CEO",
-    salary:'938309 $',
-    getSalary:()=>{
-        console.log("Salary:",this.name);
+const name = () => 'Singh Ji'
+employeeObject = {
+    name: 'Risu Singh',
+    post: "CEO",
+    salary: '938309 $',
+    getSalary: () => {
+        console.log("getSalary:", this.name);//undefined
+    },
+    getMySalary: function () {
+        console.log("getMySalary:", this.name);
+        innerFunction = () => {
+            console.log("innerFunction:", this.name);
+        },
+            innerFunction()
     }
 }
 employeeObject.getSalary()
+employeeObject.getMySalary()
