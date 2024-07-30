@@ -43,3 +43,5 @@ console.log("---------Index---------");
 // require('./src/Closures/loop')
 
 // require('./src/Memoization/BasicMemoization')
+
+require('./src/Currying/CurryingBasic')
