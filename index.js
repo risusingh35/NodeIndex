@@ -9,6 +9,7 @@ console.log("---------Index---------");
 // require('./src/ES6/ArrowFunctions')
 // require('./src/ES6/MapSetWeakSetWeakMap')
 // require('./src/ES6/ProxyObject')
+require('./src/ES6/PrototypalInheritance')
 // require('./src/ES6/OthersEs6Feature')
 
 // require('./src/ETC/ScopeAndClosures')
@@ -41,4 +42,4 @@ console.log("---------Index---------");
 // require('./src/Closures/DataEncapsulation')
 // require('./src/Closures/loop')
 
-require('./src/Memoization/BasicMemoization')
+// require('./src/Memoization/BasicMemoization')
