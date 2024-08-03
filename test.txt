@@ -1,0 +1,106 @@
+console.log('hello')
+//#1 Question 1
+let a = [1, 2, 3, 4, 5, 6];
+a[a.length - 1]++;
+a[1]++;
+console.log(a)
+
+//#2 Question 2
+
+async function foo() {
+    return true;
+}
+const flag = foo();
+console.log(flag);
+
+//#3 Question 3
+
+let arr1 = [1, 2, 3, 4, 5, 6, 7, null, 8, 9]
+const newArr = arr1.map(element => {
+    if (element > 3) {
+        console.log({ element });
+        return element
+    }
+})
+console.log({ newArr });
+console.log({ arr1 });
+console.log(newArr.length === arr1.length)
+
+//#4 Question 4
+var i = 0;
+const arr2 = ["a", "b", "c"];
+for (i = 0; i < arr2.length; i++) {
+    setTimeout(function () {
+        console.log(i)
+        console.log(arr2[i])
+    }, 1000)
+}
+console.log(i)
+//#5 Question 5
+
+const getAPiData = async () => {
+    await fetch('https://jsonplaceholder.typicode.com/todos').then(async (res) => {
+        const data = await res.json()
+        const newData = data.map((d) => d.title)
+        console.log(newData.length);
+        return newData
+
+    })
+
+}
+const PostData = { userId: 5000, id: 5000, title: 'My Title', completed: false }
+const pstAPiData = async () => {
+    const postapiRes = await fetch('https://jsonplaceholder.typicode.com/todos', {
+        method: 'POST',
+        data: PostData
+    })
+
+    let dd = await postapiRes.json()
+    let newData = addSomeMoreItem(dd)
+    console.log(newData);
+}
+
+const addSomeMoreItem = (res) => {
+    let newRes = { ...res, status: 200, msg: 'Data posted Successful' }
+    return newRes
+}
+getAPiData()
+pstAPiData().then(() => {
+    getAPiData()
+})
+
+JavaScript Task:
+Objective: Write a function to check for duplicates in an array.
+Requirements:
+The function should return false if the array contains any duplicate values.
+The function should return true if all values in the array are unique.
+Do not use any array methods such as Set, map, forEach, etc.
+Examples:
+Input: [1, 2, 3, 4, 5, 1, 2]
+Output: false
+Input: [1, 2, 3, 4, 5]
+Output: true
+function checkArrayDuplicate(arr){
+// Write your code here
+}
+console.log(checkArrayDuplicate([1, 2, 3, 4, 5, 1, 2])); // false
+console.log(checkArrayDuplicate([1, 2, 3, 4, 5])); //true
+
+
+
+function checkArrayDuplicate(arr) {
+    for (let i = 0; i < arr.length; i++) {
+        for (let j = i + 1; j < arr.length; j++) {
+            if (arr[i] === arr[j]) {
+                // console.log('isDuplicate', i, j, arr[i], arr[j])
+                return false
+                break
+            }
+        }
+
+    }
+    return true
+}
+
+console.log(checkArrayDuplicate([1, 2, 3, 4, 5, 1, 2])); // false
+console.log(checkArrayDuplicate([1, 2, 3, 4, 5])); //true
