@@ -28,6 +28,15 @@ console.log("---------JS Index---------");
 
 // require('./EventLoop/CallStack')
 // require('./EventLoop/Synchronous')
+// require('./EventLoop/eventOrder')
+// require('./EventLoop/nextTick')
+
+require('./EventEmitter/EventEmitterBasic')
+
+// const eventOrderFunction =require( '../JS/EventLoop/eventOrder.js')
+// eventOrderFunction()
+
+// require('./EventLoop/setTimeOut')
 
 // require('./THIS/1ObjectMethods')
 // require('./THIS/2ConstructorFunctions')
@@ -45,3 +54,5 @@ console.log("---------JS Index---------");
 // require('./Memoization/BasicMemoization')
 
 // require('./Currying/CurryingBasic')
+
+// require('./LogsBase/basicLogsBaseQuestion')
