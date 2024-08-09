@@ -59,9 +59,11 @@ console.log("---------JS Index---------");
 import { oopClassObject } from "./OOPs/classAndObject.js";
 import { Encapsulation } from "./OOPs/Encapsulation.js";
 import { Inheritance  } from "./OOPs/Inheritance.js";
+import { Polymorphism  } from "./OOPs/Polymorphism.js";
 
 export const JsIndex = () => {
     // oopClassObject()
     // Encapsulation()
-    Inheritance ()
+    // Inheritance ()
+    Polymorphism()
 }
