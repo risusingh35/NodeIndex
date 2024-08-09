@@ -4,7 +4,7 @@ import {connectDB} from './db/mongo.js'
 import express from 'express'
 const StartApp = () => {
     const app = express()
-    connectDB()//connect to mongodb
+    // connectDB()//connect to mongodb
     // getAllUsers()
     app.get('/', (req, res) => {
         res.send('Hello World!')
