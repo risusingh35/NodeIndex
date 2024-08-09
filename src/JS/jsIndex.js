@@ -31,7 +31,7 @@ console.log("---------JS Index---------");
 // require('./EventLoop/eventOrder')
 // require('./EventLoop/nextTick')
 
-require('./EventEmitter/EventEmitterBasic')
+// require('./EventEmitter/EventEmitterBasic')
 
 // const eventOrderFunction =require( '../JS/EventLoop/eventOrder.js')
 // eventOrderFunction()
@@ -56,3 +56,8 @@ require('./EventEmitter/EventEmitterBasic')
 // require('./Currying/CurryingBasic')
 
 // require('./LogsBase/basicLogsBaseQuestion')
+import { oppClassObject } from "./OOPs/classAndObject.js";
+
+export const JsIndex = () => {
+    oppClassObject()
+}

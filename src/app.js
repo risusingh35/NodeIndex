@@ -1,16 +1,16 @@
-require('./JS/jsIndex')
-const {getAllUsers} =require('./mongodb/mongoIndex')
-const connectDB=require('./db/mongo')
-const express = require('express')
+import {JsIndex} from './JS/jsIndex.js'
+import getAllUsers from './mongodb/mongoIndex.js'
+import {connectDB} from './db/mongo.js'
+import express from 'express'
 const StartApp = () => {
     const app = express()
     connectDB()//connect to mongodb
     app.get('/', (req, res) => {
-        getAllUsers()
+        // getAllUsers()
         res.send('Hello World!')
     })
-    
+    JsIndex()
     return app
 }
 
-module.exports=StartApp
+export default StartApp

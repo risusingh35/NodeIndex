@@ -15,4 +15,4 @@ const getAllUsers = async () => {
     }
 };
 
-module.exports = { getAllUsers };
+export { getAllUsers };
