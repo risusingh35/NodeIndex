@@ -58,8 +58,10 @@ console.log("---------JS Index---------");
 // require('./LogsBase/basicLogsBaseQuestion')
 import { oopClassObject } from "./OOPs/classAndObject.js";
 import { Encapsulation } from "./OOPs/Encapsulation.js";
+import { Inheritance  } from "./OOPs/Inheritance.js";
 
 export const JsIndex = () => {
     // oopClassObject()
-    Encapsulation()
+    // Encapsulation()
+    Inheritance ()
 }
