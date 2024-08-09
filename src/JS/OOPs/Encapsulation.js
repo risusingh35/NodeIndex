@@ -15,6 +15,9 @@ const Encapsulation = () => {
         #getPasswordMethod() {
             return `Password:${this.#password}`
         }
+        getPassword() {
+            return `The password is ${this.#getPasswordMethod()}`
+        }
         changePassword(pw) {
             if (pw.length > 5) {
                 this.#password = pw
@@ -40,6 +43,7 @@ const Encapsulation = () => {
     console.log('changePassword:', newUser.changePassword('123456'));
 
     console.log(2, newUser);
+    console.log("getPassword", newUser.getPassword());
 
 }
 export { Encapsulation }
