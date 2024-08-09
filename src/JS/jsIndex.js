@@ -56,8 +56,8 @@ console.log("---------JS Index---------");
 // require('./Currying/CurryingBasic')
 
 // require('./LogsBase/basicLogsBaseQuestion')
-import { oppClassObject } from "./OOPs/classAndObject.js";
+import { oopClassObject } from "./OOPs/classAndObject.js";
 
 export const JsIndex = () => {
-    oppClassObject()
+    oopClassObject()
 }
