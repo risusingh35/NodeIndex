@@ -5,8 +5,8 @@ import express from 'express'
 const StartApp = () => {
     const app = express()
     connectDB()//connect to mongodb
+    // getAllUsers()
     app.get('/', (req, res) => {
-        // getAllUsers()
         res.send('Hello World!')
     })
     JsIndex()

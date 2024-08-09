@@ -1,6 +1,2 @@
-// const { getAllUsers } = require('./query/getAllUsers');
-const getAllUsers = () => {
-    console.log('getAllUsers');
-
-}
+import { getAllUsers } from "./query/getAllUsers.js";
 export default getAllUsers

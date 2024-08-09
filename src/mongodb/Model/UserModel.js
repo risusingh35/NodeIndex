@@ -1,5 +1,4 @@
-const mongoose = require('mongoose');
-
+import mongoose from "mongoose";
 // Define the User schema
 const UserSchema = new mongoose.Schema({
   name: {
@@ -29,4 +28,4 @@ const UserSchema = new mongoose.Schema({
 UserSchema.index({ age: 1 });
 
 // Export the User model
-module.exports = mongoose.model('User', UserSchema);
+export default mongoose.model('User', UserSchema);

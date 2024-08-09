@@ -1,5 +1,4 @@
-const Users = require('./UserModel')
-
+import Users from "./UserModel.js";
 export {
     Users
 }
