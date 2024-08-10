@@ -4,6 +4,7 @@ import { binarySearch } from "./2binarySearch.js";
 import { findSmallest } from "./DSA_Arrays/findSmallest.js";
 import { findLargest } from "./DSA_Arrays/findLargest.js";
 import { BubbleSort } from "./DSA_Arrays/BubbleSort.js";
+import { SelectionSort } from "./DSA_Arrays/SelectionSort.js";
 const DSAIndex = () => {
     console.log('DSAIndex');
     // console.table(termsAndDescriptions)
@@ -11,6 +12,7 @@ const DSAIndex = () => {
     // binarySearch()
     // findSmallest()
     // findLargest()
-    BubbleSort()
+    // BubbleSort()
+    SelectionSort()
 }
 export { DSAIndex }
