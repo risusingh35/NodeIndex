@@ -1,4 +1,19 @@
 console.log("---------JS Index---------");
+import { DSAIndex } from "./1DSA/1DsaIndex.js";
+import { indexCodeChallenges } from "./jsCodechallenges/indexCodeChallenges.js";
+import { oopClassObject } from "./OOPs/classAndObject.js";
+import { Encapsulation } from "./OOPs/Encapsulation.js";
+import { Inheritance  } from "./OOPs/Inheritance.js";
+import { Polymorphism  } from "./OOPs/Polymorphism.js";
+
+export const JsIndex = () => {
+    // oopClassObject()
+    // Encapsulation()
+    // Inheritance ()
+    // Polymorphism()
+    // indexCodeChallenges()
+    DSAIndex()
+}
 // require('./ES5/StrictMode')
 // require('./ES5/JSONSupport')
 // require('./ES5/ArrayMethods')
@@ -56,14 +71,4 @@ console.log("---------JS Index---------");
 // require('./Currying/CurryingBasic')
 
 // require('./LogsBase/basicLogsBaseQuestion')
-import { oopClassObject } from "./OOPs/classAndObject.js";
-import { Encapsulation } from "./OOPs/Encapsulation.js";
-import { Inheritance  } from "./OOPs/Inheritance.js";
-import { Polymorphism  } from "./OOPs/Polymorphism.js";
 
-export const JsIndex = () => {
-    // oopClassObject()
-    // Encapsulation()
-    // Inheritance ()
-    Polymorphism()
-}
