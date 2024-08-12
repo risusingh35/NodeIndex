@@ -1,21 +1,22 @@
 const InsertionSort = () => {
     let array = [1, 2, 3, 4, 5, 6, 7, 8, 0]
-    let outerLoopCount = 0; // To count the number of times the outer loop runs
-    let innerLoopCount = 0; // To count the number of times the inner loop runs
+    // let outerLoopCount = 0; // To count the number of times the outer loop runs
+    // let innerLoopCount = 0; // To count the number of times the inner loop runs
     for (let i = 0; i < array.length; i++) {
         let sortedIndex = i - 1
-        outerLoopCount++
+        // outerLoopCount++
         let currentItem = array[i]
         while (sortedIndex >= 0 && array[sortedIndex] > currentItem) {
             array[sortedIndex + 1] = array[sortedIndex]
             sortedIndex--
-            innerLoopCount++
+            // innerLoopCount++
         }
         array[sortedIndex + 1] = currentItem
         console.log({ i });
 
     }
+    console.log(array);
+    // console.log({ loopCount: innerLoopCount + outerLoopCount });
 
-    console.log(array, { loopCount: innerLoopCount + outerLoopCount });
 }
 export { InsertionSort }

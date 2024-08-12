@@ -8,6 +8,7 @@ import { SelectionSort } from "./DSA_Arrays/SelectionSort.js";
 import { InsertionSort } from "./DSA_Arrays/InsertionSort.js";
 import { Quicksort } from "./Quicksort.js";
 import { LinearSearch } from "./DSA_Arrays/LinearSearch.js";
+import { TimeSort } from "./DSA_Arrays/TimeSort.js";
 const DSAIndex = () => {
     console.log('DSAIndex');
     // console.table(termsAndDescriptions)
@@ -19,6 +20,7 @@ const DSAIndex = () => {
     // SelectionSort()
     // InsertionSort()
     // Quicksort()
-    LinearSearch()
+    // LinearSearch()
+    TimeSort()
 }
 export { DSAIndex }
