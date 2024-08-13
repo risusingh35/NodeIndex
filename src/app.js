@@ -5,14 +5,14 @@ import express from 'express'
 import { Hello } from './hello.js'
 
 const StartApp = () => {
-    // Hello()
+    Hello()
     const app = express()
     // connectDB()//connect to mongodb
     // getAllUsers()
     app.get('/', (req, res) => {
         res.send('Hello World!')
     })
-    JsIndex()
+    // JsIndex()
     return app
 }
 
