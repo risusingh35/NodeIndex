@@ -1,13 +1,8 @@
 import dotenv from 'dotenv';
 dotenv.config();
-import StartApp from './src/app.js'
-const port=process.env.PORT
+import { Cluster } from './cluster.js';
 const StartServer = () => {
-// require('./src/hello')//test file 
- const app = StartApp();
- app.listen(port, () => {
-   console.log(`Server running on port ${port}`);
- });
+  Cluster()
 }
 StartServer()
 

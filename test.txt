@@ -197,73 +197,45 @@ ORDER BY
     AVG(e.salary) DESC
 LIMIT 10;
 -----------------------------------------
-const input = [
-        	{ "name": "Elroy", "color": "indigo" },
-        	{ "name": "Kaitlin", "color": "orchid" },
-        	{ "name": "Malachi", "color": "indigo" },
-        	{ "name": "Alayna", "color": "orchid" },
-        	{ "name": "Federico", "color": "silver" },
-        	{ "name": "Jannie", "color": "orchid" },
-        	{ "name": "Kavon", "color": "silver" },
-        	{ "name": "Braeden", "color": "silver" },
-        	{ "name": "Jarrett", "color": "indigo" },
-        	{ "name": "Bell", "color": "orchid" },
-              	{ "name": "k'Nox", "color": "orange" }
-];
-
-
-bucket(array, key) {
-        	//code
-
-}
-
-bucket(input, “color”)
-
-Result =>
- 
-{
-  indigo: [
-        	{ name: 'Elroy', color: 'indigo' }, 
-        	{ name: 'Malachi', color: 'indigo' },
-        	{ name: 'Jarrett', color: 'indigo' }
-  ],
-  orchid: [
-        	{ name: 'Kaitlin', color: 'orchid' },
-        	{ name: 'Alayna', color: 'orchid' },
-        	{ name: 'Jannie', color: 'orchid' },
-        	{ name: 'Bell', color: 'orchid' }     	
-  ],
-  silver: [
-        	{ name: 'Federico', color: 'silver' },
-        	{ name: 'Kavon', color: 'silver' },
-        	{ name: 'Braeden', color: 'silver' }
-  ],
-  orange: [ { name: "k'Nox", color: 'orange' } ]
-}
-
-const input = [
-  { name: "Elroy", color: "indigo" },
-  { name: "Kaitlin", color: "orchid" },
-  { name: "Malachi", color: "indigo" },
-  { name: "Alayna", color: "orchid" },
-  { name: "Federico", color: "silver" },
-  { name: "Jannie", color: "orchid" },
-  { name: "Kavon", color: "silver" },
-  { name: "Braeden", color: "silver" },
-  { name: "Jarrett", color: "indigo" },
-  { name: "Bell", color: "orchid" },
-  { name: "k'Nox", color: "orange" }
-];
-
-const groupedByColor = input.reduce((acc, item) => {
-  // Check if the color key already exists in the accumulator
-  if (!acc[item.color]) {
-    // If not, initialize it with an empty array
-    acc[item.color] = [];
-  }
-  // Push the current item into the appropriate color group
-  acc[item.color].push(item);
-  return acc;
-}, {});
-
-console.log(groupedByColor);
+Question 6-Group by age------------------
+const array=[
+    {
+        name:"RK Singh 1",age:30
+    },
+    {
+        name:"RK Singh 2",age:40
+    },
+    {
+        name:"RK Singh 3",age:50
+    },
+    {
+        name:"RK Singh 4",age:30
+    },
+    {
+        name:"RK Singh 5",age:40
+    },
+    {
+        name:"RK Singh 6",age:50
+    },
+    {
+        name:"RK Singh 7",age:30
+    },
+]
+solution 1-----------------------
+//  let dd= array.reduce((result, currentValue) => {
+//     (result[currentValue['age']] = result[currentValue['age']] || []).push(currentValue);
+//     return result;
+//   }, {});
+//   console.log(dd);
+  solution 2-----------------------
+const groupedItems = array.reduce((pre, curr) => {
+    if (!pre[curr.age]) {
+      pre[curr.age] = [];
+    }
+    
+    pre[curr.age].push(curr);
+    
+    return pre;
+  }, {});
+  
+  console.log(groupedItems);
