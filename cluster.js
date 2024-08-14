@@ -2,6 +2,7 @@
 import cluster from "cluster";
 import os from "os";
 import StartApp from "./src/app.js";
+import { Hello } from "./src/hello.js";
 
 export const Cluster = () => {
     const noOfClusters = os.cpus().length;
@@ -24,6 +25,7 @@ export const Cluster = () => {
         const app = StartApp();
         app.listen(port, () => {
             console.log(`Server running on port ${port}`);
+            Hello()
         });
     }
 }

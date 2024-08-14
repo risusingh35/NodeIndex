@@ -239,3 +239,21 @@ const groupedItems = array.reduce((pre, curr) => {
   }, {});
   
   console.log(groupedItems);
+-----------------------------------------
+Question 7-Gauss output order------------------
+
+  console.log('A');
+
+setTimeout(() => console.log('B'), 0);
+
+Promise.resolve().then(() =>
+    console.log('C')).then(() => {
+        setTimeout(() => console.log('D'), 0);
+    });
+
+setTimeout(() => console.log('E'), 0);
+
+Promise.resolve().then(() => console.log('F'));
+
+console.log('G');
+
